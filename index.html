@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sradha suman Nayak Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c5dce6a1b0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+            
+                <ul id="sidemenu">
+                    <li> <a href="#header">Home</a></li>
+                    <li> <a href="#about">About</a></li>
+                    <li> <a href="#services">Services</a></li>
+                    <li> <a href="#portfolio">Portfolio</a></li>
+                    <li> <a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p> Web Developer </p>
+                <h1>Hi, I am <span>Sradha suman</span></br> Nayak from India</h1>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/user.jpeg" width="320px">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title"> About Me </h1>
+                    <p>As an ambitious and dedicated student from Odisha(INDIA) 
+                       I finished my schooling from Gandhiji Ucha Bidyapitha.
+                       Then, Completed my  Intermediate from Salipur Autonomous College and Bsc.Computer Science in may 2022 from Kendrapara Autonomous college.Now i am pursuing MCA in Indira Gandhi Institute of Technology,sarang.
+                       I am open to exciting opportunities and challenges that will further enhance my abilities and enable me to bring innovative solutions to real-world problems.
+                       I am eager to hear about potential career opportunities, so I would be pleased to chat about job openings in the IT sphere.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')"> Skills </p>
+                        <p class="tab-links" onclick="opentab('experience')"> Experience </p>
+                        <p class="tab-links" onclick="opentab('education')"> Education </p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Java</span><br>Java Programming</li>
+                            <li><span>Web Developer</span><br>Web app development</li>
+                            <li><span>Front End Developer</span><br>Front end app development</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>7 June 2023 - 6 July 2023</span><br>  web development internship from  IBM Skillsbuild Platform and got certified by CSRBOX</li>
+                            <li><span>30 may 2023 - 20 June 2023</span><br> Web Development Internship from Sparks Foundation </li>
+                            <li><span>1 April 2023 - 1 May 2023</span><br>Agile Methodology Virtual Experience
+                                Program  from Cognizant and got certified by Forage</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li> I Completed my Matriculation with 91%  from Gandhiji Ucha Vidyapitha (Odisha)</li>
+                            <li><span> 2017 -  2019</span><br> Completed Senior Secondary School  in Science from Salipur Higher secondary School(Odisha)</li>
+                            <li><span> 2019 -  2022</span><br> Completed my graduation on B.sc (Computer Science) with 8.84 CGPA from Kendrapara Autonomous college(Odisha) </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title"> My Services </h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-brands fa-python"></i>
+                    <h2> Java Programming </h2>
+                    <p> Learned Java concepts and has a good understanding of it that I have gained through Goggle Crash Course on Java.</p>
+                        <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2> Web Development </h2>
+                    <p> As a Web Development intern, I had the opportunity to develop a website on Basic Banking System which is able to produce transaction and transaction history.</p>
+                        <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title"> My Work </h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Images/work.png">
+                    <div class="layer">
+                        <h3> Basic banking system</h3>
+                        <p> A web application used to transfer virtual money between multiple users and also record  the banking transactions. </p>
+                    </div>
+                    
+                </div>
+                </div>
+                </div>
+            </div>
+            <a href="#" class="btn"> See More </a>
+        </div>
+    </div>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title"> Contact Me </h1>
+                    <p><i class="fa-sharp fa-solid fa-paper-plane"></i> sradhasuman002@gmail.com </p>
+                    <p><i class="fa-sharp fa-solid fa-square-phone"></i> 9178536611 </p>
+                    <div class="social-icons">
+                       
+                        <a href="https://www.linkedin.com/in/sradha-suman-nayak-266a7725a><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Sradha1234"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                   
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p> Copyright &#169; Sradha suman Nayak </p>
+        </div>
+    </div>
+    <script>
+         
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwY_21f5ysQ1l-SZgWJNICb7KCc8NzsdfdeIx4GvwSsua1WqSKDcq9h6kNXkS3CtaA/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message send successfully!!"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
